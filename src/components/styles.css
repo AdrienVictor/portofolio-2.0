@@ -1,0 +1,29 @@
+:root {
+  --purple: #6441a5;
+  --violet: #9641a5;
+  --yellow: #f6db35;
+  font-size: 20px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: initial;
+}
+body {
+  font-family: 'Cairo', sans-serif;
+}
+h1 {
+  font-family: 'Bangers', cursive;
+  font-size: 5rem;
+  color: var(--yellow);
+}
+h2 {
+  font-family: 'Bangers', cursive;
+  font-size: 3rem;
+  color: var(--yellow);
+}
+h3 {
+  font-family: 'Bangers', cursive;
+  font-size: 2rem;
+}

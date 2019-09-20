@@ -1,0 +1,15 @@
+.section___Home {
+  background-color: var(--purple);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home___Hero {
+  font-size: 4rem;
+  line-height: 2;
+  text-align: center;
+  width: 55vw;
+  color: var(--yellow);
+}

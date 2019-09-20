@@ -1,0 +1,29 @@
+.section___Skills {
+  height: 100vh;
+  background-color: var(--purple);
+  scroll-snap-align: start;
+}
+.section___Skills h1 {
+  padding-top: 20vh;
+  margin-bottom: 10vh;
+  text-align: center;
+  font-size: 9rem;
+}
+.skills___Container {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: auto;
+}
+.skill {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  align-self: flex-end;
+  margin: 25px;
+  border-bottom: 1px solid black;
+}
