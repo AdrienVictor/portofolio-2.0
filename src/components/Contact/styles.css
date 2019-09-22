@@ -1,0 +1,32 @@
+.section___Contact {
+  min-height: 100vh;
+  background-color: var(--purple);
+  border-bottom: 15px solid var(--violet);
+}
+.pow___Email {
+  background: url(../../images/pow.png) no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 270px;
+  height: 198px;
+  left: 30vh;
+  top: 15vh;
+}
+.pow___Follow {
+  background: url(../../images/pow.png) no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 360px;
+  height: 264px;
+  left: 5vw;
+  top: 30vh;
+}
+.pow___Find {
+  background: url(../../images/pow.png) no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 450px;
+  height: 330px;
+  left: 75vw;
+  top: 10vh;
+}

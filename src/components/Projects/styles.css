@@ -1,0 +1,31 @@
+.section___Projects {
+  min-height: 100vh;
+  background-color: var(--purple);
+  scroll-snap-align: start;
+}
+
+.projects___Container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80vw;
+  margin: auto;
+}
+.card___List {
+  margin-top: 4%;
+  margin-left: 10%;
+  list-style-type: square;
+  /* color: var(--yellow); */
+  /* line-height: 1rem; */
+}
+
+.card___Bold {
+  /* margin: 5%; */
+  font-weight: bold;
+  border-bottom: 2px solid yellow;
+  /* text-decoration: underline; */
+  text-decoration-color: var(--yellow);
+}
+.card___Text {
+  line-height: 1.5rem;
+}

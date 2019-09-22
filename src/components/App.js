@@ -5,6 +5,8 @@ import Helmet from './Helmet'
 import NavDrawer from './NavDrawer'
 import AboutMe from './About Me'
 import Skills from './Skills'
+import Projects from './Projects'
+import Contact from './Contact'
 
 export default function App() {
   return (
@@ -14,6 +16,8 @@ export default function App() {
       <Home></Home>
       <AboutMe></AboutMe>
       <Skills></Skills>
+      <Projects></Projects>
+      <Contact></Contact>
     </div>
   )
 }

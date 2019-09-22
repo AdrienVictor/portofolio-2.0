@@ -1,5 +1,5 @@
 .section___Skills {
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--purple);
   scroll-snap-align: start;
 }

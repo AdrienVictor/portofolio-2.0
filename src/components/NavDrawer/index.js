@@ -12,7 +12,7 @@ const useStyles = makeStyles({
   list: {
     width: 300,
     backgroundColor: 'var(--violet)',
-    height: '100vh',
+    minHeight: '100vh',
   },
   listItem: {
     paddingTop: '10vh',

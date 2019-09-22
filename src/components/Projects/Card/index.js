@@ -1,25 +1,37 @@
 import React from 'react'
+import Img from 'gatsby-image'
 import { makeStyles } from '@material-ui/core/styles'
 import clsx from 'clsx'
 import Card from '@material-ui/core/Card'
-import CardHeader from '@material-ui/core/CardHeader'
-import CardMedia from '@material-ui/core/CardMedia'
 import CardContent from '@material-ui/core/CardContent'
 import CardActions from '@material-ui/core/CardActions'
 import Collapse from '@material-ui/core/Collapse'
 import IconButton from '@material-ui/core/IconButton'
-import Typography from '@material-ui/core/Typography'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
+
+import './styles.css'
 
 const useStyles = makeStyles(theme => ({
   card: {
-    maxWidth: 345,
+    // maxWidth: 400,
+    display: 'flex',
+    flexDirection: 'column',
+    minHeight: 480,
+    width: 450,
+    margin: 30,
+    borderRadius: 0,
+    backgroundColor: 'var(--violet)',
+    border: '2px solid #000',
+    boxShadow: '10px 10px 0 0 #000',
+    transition: '.4s ease-in-out',
+    //   -webkit-box-shadow: "6px 6px 0 0 #000",
+    '&:hover': { transform: 'scale(1.1)' },
   },
-  media: {
-    height: 0,
-    paddingTop: '56.25%', // 16:9
+  header: {
+    padding: '16px',
   },
   expand: {
+    color: 'var(--yellow)',
     transform: 'rotate(0deg)',
     marginLeft: 'auto',
     transition: theme.transitions.create('transform', {
@@ -44,24 +56,27 @@ export default function RecipeReviewCard({
   const classes = useStyles()
   const [expanded, setExpanded] = React.useState(false)
 
-  function handleExpandClick() {
+  function handleExpandClick(e) {
+    console.log(e)
     setExpanded(!expanded)
   }
 
   return (
-    <Card className={classes.card}>
-      <CardHeader title={title} subheader={date} />
-      <CardMedia className={classes.media} image={image} title={imageTitle} />
+    <Card id={title} className={classes.card}>
+      <div className={classes.header}>
+        <h3>{title}</h3>
+        <p>{date}</p>
+      </div>
+      {/* <CardHeader title={title} subheader={date} /> */}
+      <Img fluid={image} title={imageTitle} />
       <CardContent>
-        <Typography variant="body2" color="textSecondary" component="p">
-          {description}
-        </Typography>
+        <p>{description}</p>
       </CardContent>
-      <CardActions disableSpacing>
-        <a href={linkCode}>
+      <CardActions style={{ marginTop: 'auto' }} disableSpacing>
+        <a href={linkCode} target="_blank" rel="noopener noreferrer">
           <i class="fas fa-code"></i>
         </a>
-        <a href={linkDemo}>
+        <a href={linkDemo} target="_blank" rel="noopener noreferrer">
           <i class="fas fa-external-link-alt"></i>
         </a>
         <IconButton
@@ -76,9 +91,7 @@ export default function RecipeReviewCard({
         </IconButton>
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <CardContent>
-          <Typography paragraph>{textContent}</Typography>
-        </CardContent>
+        <div className="text___Content">{textContent}</div>
       </Collapse>
     </Card>
   )

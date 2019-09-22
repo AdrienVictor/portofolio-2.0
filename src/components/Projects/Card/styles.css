@@ -1,0 +1,16 @@
+.text___Content {
+  padding: 15px;
+}
+.text___Content li {
+  /* color: var(--yellow); */
+}
+.fas {
+  color: var(--yellow);
+  font-size: 1.5rem;
+  margin: 0 20px;
+  padding: 5px;
+}
+.fas:hover {
+  color: var(--violet);
+  background-color: var(--yellow);
+}
