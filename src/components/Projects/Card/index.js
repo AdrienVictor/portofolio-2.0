@@ -57,7 +57,6 @@ export default function RecipeReviewCard({
   const [expanded, setExpanded] = React.useState(false)
 
   function handleExpandClick(e) {
-    console.log(e)
     setExpanded(!expanded)
   }
 
@@ -67,7 +66,6 @@ export default function RecipeReviewCard({
         <h3>{title}</h3>
         <p>{date}</p>
       </div>
-      {/* <CardHeader title={title} subheader={date} /> */}
       <Img fluid={image} title={imageTitle} />
       <CardContent>
         <p>{description}</p>

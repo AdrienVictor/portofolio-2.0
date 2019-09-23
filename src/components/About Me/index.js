@@ -6,7 +6,7 @@ import './styles.css'
 
 export default function AboutMe() {
   return (
-    <section className="section___AboutMe">
+    <section id="about-me" className="section___AboutMe">
       <HelloWorld></HelloWorld>
       <MyPassions></MyPassions>
     </section>

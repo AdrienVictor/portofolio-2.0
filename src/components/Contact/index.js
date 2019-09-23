@@ -4,12 +4,35 @@ import './styles.css'
 
 function Contact() {
   return (
-    <section className="section___Contact">
+    <section id="contact" className="section___Contact">
       <h1
         style={{ textAlign: 'center', paddingTop: '15vh', marginBottom: '0vh' }}
       >
         Contact
       </h1>
+      <form
+        className="contact___Form"
+        name="contact"
+        method="POST"
+        data-netlify="true"
+      >
+        <p>
+          <input type="text" name="subject" placeholder="subject" required />
+        </p>
+        <p>
+          <input type="text" name="name" placeholder="name" required />
+        </p>
+        <p>
+          <input type="email" name="email" placeholder="email" required />
+        </p>
+
+        <p>
+          <textarea name="message" placeholder="message" required></textarea>
+        </p>
+        <p style={{ textAlign: 'center' }}>
+          <button type="submit">Send</button>
+        </p>
+      </form>
       <div className="pow___Email">
         <h3
           style={{

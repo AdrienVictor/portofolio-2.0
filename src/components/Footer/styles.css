@@ -1,0 +1,41 @@
+.section___Footer {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+.footer___Social {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 20px;
+}
+.footer___Social .fab {
+  margin: 0 25px;
+}
+.section___Footer p {
+  text-align: center;
+  margin-top: auto;
+  font-size: 0.7rem;
+}
+.fa-instagram {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  -webkit-background-clip: text;
+  /* Also define standard property for compatibility */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fa-twitter {
+  color: #1da1f3;
+}
+.fa-linkedin {
+  color: #0177b5;
+}
+.fa-github {
+  color: #211f1f;
+}

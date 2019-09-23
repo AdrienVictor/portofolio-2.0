@@ -1,8 +1,8 @@
-import React, { useEffect } from "react"
-import { graphql, useStaticQuery } from "gatsby"
-import SplitText from "react-pose-text"
+import React, { useEffect } from 'react'
+import { graphql, useStaticQuery } from 'gatsby'
+import SplitText from 'react-pose-text'
 
-import "./styles.css"
+import './styles.css'
 
 export default () => {
   const data = useStaticQuery(graphql`
@@ -51,7 +51,7 @@ export default () => {
       opacity: 1,
       y: 0,
       transition: ({ charInWordIndex }) => ({
-        type: "spring",
+        type: 'spring',
         delay: charInWordIndex * 150,
         stiffiness: 300 + charInWordIndex * 100,
         damping: 50 - charInWordIndex * 1,
@@ -63,7 +63,7 @@ export default () => {
 
   return (
     <>
-      <section className="section___Home">
+      <section id="home" className="section___Home">
         <h1 className="home___Hero">
           <SplitText
             className="text___Home"

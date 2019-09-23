@@ -7,6 +7,7 @@ import AboutMe from './About Me'
 import Skills from './Skills'
 import Projects from './Projects'
 import Contact from './Contact'
+import Footer from './Footer'
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
       <Skills></Skills>
       <Projects></Projects>
       <Contact></Contact>
+      <Footer></Footer>
     </div>
   )
 }

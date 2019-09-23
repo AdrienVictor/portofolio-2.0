@@ -2,6 +2,7 @@
   min-height: 100vh;
   background-color: var(--purple);
   scroll-snap-align: start;
+  padding-bottom: 5vh;
 }
 .section___Skills h1 {
   padding-top: 20vh;
@@ -14,16 +15,45 @@
   justify-content: space-around;
   align-items: baseline;
   flex-wrap: wrap;
-  width: 70%;
+  width: 80%;
   margin: auto;
+  padding: 10px;
+  /* background-color: white; */
+  /* border: 2px solid #000;
+  box-shadow: 6px 6px 0 0 #000; */
 }
 .skill {
-  align-self: flex-end;
+  width: 150px;
+  height: 150px;
   display: flex;
   flex-direction: column;
   justify-content: baseline;
   align-items: center;
   align-self: flex-end;
   margin: 25px;
-  border-bottom: 1px solid black;
+  padding: 25px;
+  /* border-bottom: 1px solid black; */
+  background-color: white;
+  border-radius: 50%;
+  -webkit-animation: circle 5s infinite alternate;
+  animation: circle 5s infinite alternate;
+  border: 2px solid #000;
+}
+@keyframes circle {
+  0% {
+    /* -webkit-box-shadow: 14px 9px 0 0 #000; */
+    box-shadow: 7px 5px 0 0 #000;
+  }
+  25% {
+    /* -webkit-box-shadow: 0 12px 0 0 #000; */
+    box-shadow: 0 6px 0 0 #000;
+  }
+  50% {
+    /* -webkit-box-shadow: -18px -9px 0 0 #000; */
+    box-shadow: -9px -5px 0 0 #000;
+  }
+  75% {
+    /* -webkit-box-shadow: 39px 6px 0 0 #000; */
+    box-shadow: 10px 3px 0 0 #000;
+  }
 }

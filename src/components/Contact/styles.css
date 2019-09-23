@@ -1,32 +1,92 @@
 .section___Contact {
-  min-height: 100vh;
+  min-height: calc(100vh - 200px);
   background-color: var(--purple);
   border-bottom: 15px solid var(--violet);
+  position: relative;
 }
 .pow___Email {
   background: url(../../images/pow.png) no-repeat;
   background-size: cover;
-  position: relative;
+  position: absolute;
+  z-index: 300;
   width: 270px;
   height: 198px;
-  left: 30vh;
+  left: 25vh;
   top: 15vh;
+  -webkit-animation: spin 5s ease infinite alternate-reverse;
+  animation: spin 5s ease infinite alternate-reverse;
+  animation-delay: 3s;
 }
 .pow___Follow {
   background: url(../../images/pow.png) no-repeat;
   background-size: cover;
-  position: relative;
+  position: absolute;
+  z-index: 300;
   width: 360px;
   height: 264px;
   left: 5vw;
-  top: 30vh;
+  top: 60vh;
+  -webkit-animation: spin 5s ease infinite alternate;
+  animation: spin 5s ease infinite alternate;
+  animation-delay: 1s;
 }
 .pow___Find {
   background: url(../../images/pow.png) no-repeat;
   background-size: cover;
-  position: relative;
+  position: absolute;
+  z-index: 300;
   width: 450px;
   height: 330px;
-  left: 75vw;
-  top: 10vh;
+  right: 3vw;
+  bottom: 5vh;
+  -webkit-animation: spin 5s ease infinite alternate-reverse;
+  animation: spin 5s ease infinite alternate-reverse;
+}
+@keyframes spin {
+  0% {
+    transform: rotateZ(-15deg);
+  }
+
+  100% {
+    transform: rotateZ(25deg);
+  }
+}
+
+.contact___Form {
+  min-width: 40vw;
+  max-width: 40vw;
+  margin: auto;
+  margin-top: 5%;
+  /* position: absolute; */
+}
+
+.contact___Form input {
+  padding: 10px 0;
+  margin: 15px 0;
+  width: 100%;
+  text-align: center;
+  border: 2px solid black;
+  box-shadow: 6px 6px 0 0 #000;
+}
+.contact___Form textarea {
+  width: 100%;
+  height: 20vh;
+  padding: 10px;
+  border: 2px solid black;
+  box-shadow: 6px 6px 0 0 #000;
+  margin: 15px 0;
+}
+.contact___Form button {
+  padding: 10px;
+  font-family: 'Bangers', cursive;
+  border: 2px solid black;
+  width: 20%;
+  background: gray;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+.contact___Form button:hover {
+  background: green;
+  box-shadow: 10px 10px 0 0 #000;
+  transform: scale(1.2);
 }

@@ -1,11 +1,12 @@
 import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
+import { graphql, useStaticQuery, Link } from 'gatsby'
 import { makeStyles } from '@material-ui/core/styles'
 import Drawer from '@material-ui/core/Drawer'
 import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
 import ListItemText from '@material-ui/core/ListItemText'
 
+import './styles.css'
 import NavMenu from '../NavMenu'
 
 const useStyles = makeStyles({
@@ -21,6 +22,9 @@ const useStyles = makeStyles({
 })
 
 export default function NavDrawer() {
+  if (typeof window !== 'undefined') {
+    require('smooth-scroll')('a[href*="#"]')
+  }
   const data = useStaticQuery(graphql`
     {
       allContentfulNavBar(sort: { fields: orderNumber, order: ASC }) {
@@ -34,7 +38,6 @@ export default function NavDrawer() {
       }
     }
   `)
-  console.log(data.allContentfulNavBar.edges)
 
   const classes = useStyles()
   const [state, setState] = React.useState({
@@ -59,22 +62,14 @@ export default function NavDrawer() {
       onClick={toggleDrawer(side, false)}
       onKeyDown={toggleDrawer(side, false)}
     >
-      <div
-        style={{
-          width: '30px',
-          fontSize: '3rem',
-          fontFamily: 'Bangers, cursive',
-          marginLeft: 'auto',
-        }}
-      >
-        x
-      </div>
       <List className={classes.listItem}>
         {data.allContentfulNavBar.edges.map(({ node: item }) => (
-          <ListItem button key={item.id}>
-            <h3>{item.title}</h3>
-            {/* <ListItemText primary={item.title} /> */}
-          </ListItem>
+          <Link key={item.id} to={`#${item.slug}`}>
+            <ListItem button>
+              <h3 className="nav___Link">{item.title}</h3>
+              {/* <ListItemText primary={item.title} /> */}
+            </ListItem>
+          </Link>
         ))}
       </List>
     </div>

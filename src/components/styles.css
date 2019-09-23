@@ -27,3 +27,6 @@ h3 {
   font-family: 'Bangers', cursive;
   font-size: 2rem;
 }
+a {
+  text-decoration: none;
+}

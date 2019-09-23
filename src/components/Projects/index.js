@@ -53,7 +53,7 @@ function Projects() {
   }
 
   return (
-    <section className="section___Projects">
+    <section id="projects" className="section___Projects">
       <h1
         style={{ textAlign: 'center', paddingTop: '5vh', marginBottom: '5vh' }}
       >

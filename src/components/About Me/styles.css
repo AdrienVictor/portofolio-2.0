@@ -1,6 +1,7 @@
 .section___AboutMe {
   display: flex;
-  /* flex-wrap: wrap; */
+  justify-content: center;
+  flex-wrap: wrap;
   min-height: 100vh;
   background: linear-gradient(97.79deg, var(--purple) 55.01%, #ffffff 55.27%);
   background: var(--purple);

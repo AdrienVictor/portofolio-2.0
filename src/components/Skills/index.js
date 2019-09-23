@@ -1,6 +1,6 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image'
+import Img from 'gatsby-image/withIEPolyfill'
 
 import './styles.css'
 
@@ -31,7 +31,7 @@ function Skills() {
     }
   `)
   return (
-    <section className="section___Skills">
+    <section id="skills" className="section___Skills">
       <h1>Skills</h1>
       <div className="skills___Container">
         {data.allContentfulSkillsList.edges.map(({ node: item }) => {
@@ -39,9 +39,10 @@ function Skills() {
             <div className="skill">
               <Img
                 style={{
-                  width: '110px',
+                  width: '100%',
                   marginBottom: '10px',
                 }}
+                objectFit="scale-down"
                 fluid={item.skillLogoOrIcon.fluid}
               ></Img>
               <p>{item.skill}</p>
