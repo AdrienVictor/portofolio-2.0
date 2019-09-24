@@ -26,6 +26,11 @@ const useStyles = makeStyles(theme => ({
     transition: '.4s ease-in-out',
     //   -webkit-box-shadow: "6px 6px 0 0 #000",
     '&:hover': { transform: 'scale(1.1)' },
+    ['@media only screen and (max-width: 900px)']: {
+      width: 300,
+      minHeight: 405,
+      '&:hover': { transform: 'scale(1)' },
+    },
   },
   header: {
     padding: '16px',

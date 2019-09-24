@@ -11,7 +11,7 @@
   z-index: 300;
   width: 270px;
   height: 198px;
-  left: 25vh;
+  left: 20%;
   top: 15vh;
   -webkit-animation: spin 5s ease infinite alternate-reverse;
   animation: spin 5s ease infinite alternate-reverse;
@@ -24,8 +24,8 @@
   z-index: 300;
   width: 360px;
   height: 264px;
-  left: 5vw;
-  top: 60vh;
+  left: 5%;
+  bottom: 10%;
   -webkit-animation: spin 5s ease infinite alternate;
   animation: spin 5s ease infinite alternate;
   animation-delay: 1s;
@@ -37,8 +37,8 @@
   z-index: 300;
   width: 450px;
   height: 330px;
-  right: 3vw;
-  bottom: 5vh;
+  right: 3%;
+  bottom: 5%;
   -webkit-animation: spin 5s ease infinite alternate-reverse;
   animation: spin 5s ease infinite alternate-reverse;
 }
@@ -55,8 +55,8 @@
 .contact___Form {
   min-width: 40vw;
   max-width: 40vw;
-  margin: auto;
-  margin-top: 5%;
+  margin: 5% auto;
+  /* margin-top: 5%; */
   /* position: absolute; */
 }
 
@@ -79,6 +79,7 @@
 .contact___Form button {
   padding: 10px;
   font-family: 'Bangers', cursive;
+  font-size: 1rem;
   border: 2px solid black;
   width: 20%;
   background: gray;
@@ -89,4 +90,15 @@
   background: green;
   box-shadow: 10px 10px 0 0 #000;
   transform: scale(1.2);
+}
+
+@media only screen and (max-width: 900px) {
+  .pow___Email,
+  .pow___Find,
+  .pow___Follow {
+    display: none;
+  }
+  .contact___Form button {
+    width: 100%;
+  }
 }

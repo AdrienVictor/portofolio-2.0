@@ -13,3 +13,9 @@
   width: 55vw;
   color: var(--yellow);
 }
+@media only screen and (max-width: 900px) {
+  .home___Hero {
+    font-size: 1.5rem;
+    width: 80vw;
+  }
+}

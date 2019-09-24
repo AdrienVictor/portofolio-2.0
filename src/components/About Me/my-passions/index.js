@@ -36,7 +36,7 @@ function MyPassions() {
   `)
 
   return (
-    <div style={{ width: '40%', marginTop: '10%' }}>
+    <div className="passions___Container">
       <h2 style={{ textAlign: 'center' }}>
         {data.contentfulSectionEntry.subtitle2}
       </h2>
