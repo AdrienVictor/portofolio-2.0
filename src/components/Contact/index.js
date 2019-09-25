@@ -14,34 +14,18 @@ function Contact() {
         className="contact___Form"
         name="contact"
         method="POST"
+        action="/success"
         data-netlify="true"
+        data-netlify-honeypot="bot-field"
       >
         <p>
-          <input
-            type="hidden"
-            // type="text"
-            name="subject"
-            placeholder="subject"
-            required
-          />
+          <input type="text" name="subject" placeholder="subject" required />
         </p>
         <p>
-          <input
-            type="hidden"
-            // type="text"
-            name="name"
-            placeholder="name"
-            required
-          />
+          <input type="text" name="name" placeholder="name" required />
         </p>
         <p>
-          <input
-            type="hidden"
-            // type="email"
-            name="email"
-            placeholder="email"
-            required
-          />
+          <input type="email" name="email" placeholder="email" required />
         </p>
 
         <p>
