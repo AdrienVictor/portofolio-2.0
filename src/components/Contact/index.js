@@ -3,6 +3,21 @@ import React from 'react'
 import './styles.css'
 
 function Contact() {
+  const handleSubmit = e => {
+    e.preventDefault()
+    const form = e.target
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({
+        'form-name': form.getAttribute('name'),
+        ...this.state,
+      }),
+    })
+      .then(() => navigate(form.getAttribute('action')))
+      .catch(error => alert(error))
+  }
+
   return (
     <section id="contact" className="section___Contact">
       <h1
@@ -14,9 +29,9 @@ function Contact() {
         className="contact___Form"
         name="contact"
         method="POST"
-        action="/success"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
+        onSubmit={handleSubmit}
       >
         <p>
           <input type="text" name="subject" placeholder="subject" required />
