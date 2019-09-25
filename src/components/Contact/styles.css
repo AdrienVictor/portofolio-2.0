@@ -101,4 +101,7 @@
   .contact___Form button {
     width: 100%;
   }
+  .contact___Form {
+    width: 70vw;
+  }
 }

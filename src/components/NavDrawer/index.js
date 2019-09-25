@@ -14,6 +14,9 @@ const useStyles = makeStyles({
     width: 300,
     backgroundColor: 'var(--violet)',
     minHeight: '100vh',
+    ['@media only screen and (max-width: 900px)']: {
+      width: 200,
+    },
   },
   listItem: {
     paddingTop: '10vh',
@@ -25,6 +28,7 @@ export default function NavDrawer() {
   if (typeof window !== 'undefined') {
     require('smooth-scroll')('a[href*="#"]')
   }
+
   const data = useStaticQuery(graphql`
     {
       allContentfulNavBar(sort: { fields: orderNumber, order: ASC }) {

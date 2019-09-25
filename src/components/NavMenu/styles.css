@@ -25,6 +25,11 @@
   box-shadow: 6px 6px 0 0 #000;
   z-index: 300;
 }
+.scrolled {
+  /* -webkit-transform: translate3d(40px, 50px, 0) rotate(90deg); */
+  transform: translate3d(-4vw, 50px, 0) rotate(90deg);
+  /* left: 0vw; */
+}
 
 .menu___Switch {
   display: grid;
@@ -59,4 +64,16 @@
   width: 19px;
   /* -webkit-transition: 0.3s; */
   transition: 0.3s;
+}
+@media only screen and (max-width: 900px) {
+  .burger___Menu h3 {
+    display: none;
+  }
+  .burger___Menu {
+    width: 61px;
+    padding: 0;
+  }
+  .menu___Switch {
+    padding: 10px;
+  }
 }
