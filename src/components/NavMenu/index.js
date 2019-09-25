@@ -16,7 +16,7 @@ function NavMenu({ handleClick }) {
   return (
     // <div className="nav">
     <div
-      className={position >= 1 ? 'burger___Menu scrolled' : 'burger___Menu'}
+      className={position > 1 ? 'burger___Menu scrolled' : 'burger___Menu'}
       onClick={handleClick}
     >
       <h3>Menu</h3>
