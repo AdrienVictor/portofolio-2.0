@@ -68,7 +68,7 @@ export default function NavDrawer() {
     >
       <List className={classes.listItem}>
         {data.allContentfulNavBar.edges.map(({ node: item }) => (
-          <Link key={item.id} to={`#${item.slug}`}>
+          <Link key={item.id} to={`/#${item.slug}`}>
             <ListItem button>
               <h3 className="nav___Link">{item.title}</h3>
               {/* <ListItemText primary={item.title} /> */}

@@ -36,7 +36,7 @@ function Skills() {
       <div className="skills___Container">
         {data.allContentfulSkillsList.edges.map(({ node: item }) => {
           return (
-            <div className="skill">
+            <div key={item.id} className="skill">
               <Img
                 style={{
                   width: '100%',

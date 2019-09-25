@@ -53,7 +53,6 @@
 }
 
 .contact___Form {
-  min-width: 40vw;
   max-width: 40vw;
   margin: 5% auto;
   /* margin-top: 5%; */
@@ -102,6 +101,6 @@
     width: 100%;
   }
   .contact___Form {
-    width: 70vw;
+    max-width: 70vw;
   }
 }

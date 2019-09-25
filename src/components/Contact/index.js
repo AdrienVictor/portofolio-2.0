@@ -15,6 +15,7 @@ function Contact() {
         name="contact"
         method="POST"
         data-netlify="true"
+        data-netlify-honeypot="bot-field"
       >
         <p>
           <input type="text" name="subject" placeholder="subject" required />

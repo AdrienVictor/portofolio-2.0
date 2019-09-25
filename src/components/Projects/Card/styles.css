@@ -1,6 +1,7 @@
 .text___Content {
-  padding: 15px;
+  padding: 0 15px;
 }
+
 .text___Content li {
   /* color: var(--yellow); */
 }

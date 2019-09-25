@@ -62,9 +62,8 @@ function Projects() {
       <div className="projects___Container">
         {data.allContentfulProjectsShowcase.edges.map(({ node: item }) => {
           return (
-            <div>
+            <div key={item.id}>
               <Card
-                key={item.id}
                 title={item.title}
                 date={item.date}
                 image={item.image.fluid}

@@ -77,10 +77,10 @@ export default function RecipeReviewCard({
       </CardContent>
       <CardActions style={{ marginTop: 'auto' }} disableSpacing>
         <a href={linkCode} target="_blank" rel="noopener noreferrer">
-          <i class="fas fa-code"></i>
+          <i className="fas fa-code"></i>
         </a>
         <a href={linkDemo} target="_blank" rel="noopener noreferrer">
-          <i class="fas fa-external-link-alt"></i>
+          <i className="fas fa-external-link-alt"></i>
         </a>
         <IconButton
           className={clsx(classes.expand, {

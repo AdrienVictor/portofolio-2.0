@@ -20,13 +20,12 @@
 }
 
 .card___Bold {
-  /* margin: 5%; */
   font-weight: bold;
   border-bottom: 2px solid yellow;
-  /* text-decoration: underline; */
   text-decoration-color: var(--yellow);
 }
 .card___Text {
+  margin: 15px 0;
   line-height: 1.5rem;
 }
 
