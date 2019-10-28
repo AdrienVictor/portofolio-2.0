@@ -32,7 +32,12 @@ function AboutMe() {
   documentToReactComponents(data.contentfulSectionEntry.content.json, options)
 
   return (
-    <div className="hello___Container">
+    <div
+      className="hello___Container"
+      data-sal="slide-right"
+      data-sal-delay="300"
+      data-sal-easing="ease-in"
+    >
       <h2 style={{ textAlign: 'center' }}>
         {data.contentfulSectionEntry.subtitle}
       </h2>

@@ -34,9 +34,16 @@ function Skills() {
     <section id="skills" className="section___Skills">
       <h1>Skills</h1>
       <div className="skills___Container">
-        {data.allContentfulSkillsList.edges.map(({ node: item }) => {
+        {data.allContentfulSkillsList.edges.map(({ node: item }, index) => {
           return (
-            <div key={item.id} className="skill">
+            <div
+              key={item.id}
+              className="skill"
+              data-sal="slide-right"
+              data-sal-delay={`${300 - (index + 1) * 10}`}
+              data-sal-duration="10"
+              data-sal-easing="ease-in"
+            >
               <Img
                 style={{
                   width: '100%',

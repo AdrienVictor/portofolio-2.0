@@ -8,7 +8,11 @@ export default function AboutMe() {
   return (
     <section id="about-me" className="section___AboutMe">
       <HelloWorld></HelloWorld>
-      <MyPassions></MyPassions>
+      <MyPassions
+        data-sal="slide-right"
+        data-sal-delay="300"
+        data-sal-easing="ease"
+      ></MyPassions>
     </section>
   )
 }

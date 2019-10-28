@@ -36,7 +36,12 @@ function MyPassions() {
   `)
 
   return (
-    <div className="passions___Container">
+    <div
+      className="passions___Container"
+      data-sal="slide-left"
+      data-sal-delay="300"
+      data-sal-easing="ease-in"
+    >
       <h2 style={{ textAlign: 'center' }}>
         {data.contentfulSectionEntry.subtitle2}
       </h2>
