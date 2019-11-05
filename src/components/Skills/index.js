@@ -40,8 +40,8 @@ function Skills() {
               key={item.id}
               className="skill"
               data-sal="slide-right"
-              data-sal-delay={`${300 - (index + 1) * 10}`}
-              data-sal-duration="10"
+              data-sal-delay={`${300 + (index + 1) * 10}`}
+              data-sal-duration="100"
               data-sal-easing="ease-in"
             >
               <Img

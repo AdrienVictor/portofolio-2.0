@@ -36,7 +36,7 @@ function AboutMe() {
       className="hello___Container"
       data-sal="slide-right"
       data-sal-delay="300"
-      data-sal-easing="ease-in"
+      data-sal-easing="ease-out"
     >
       <h2 style={{ textAlign: 'center' }}>
         {data.contentfulSectionEntry.subtitle}

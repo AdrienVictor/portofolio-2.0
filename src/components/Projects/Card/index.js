@@ -66,7 +66,14 @@ export default function RecipeReviewCard({
   }
 
   return (
-    <Card id={title} className={classes.card}>
+    <Card
+      id={title}
+      className={classes.card}
+      data-sal="fade-in"
+      data-sal-delay="300"
+      date-sal-duration="100"
+      data-sal-easing="ease-in"
+    >
       <div className={classes.header}>
         <h3>{title}</h3>
         <p>{date}</p>

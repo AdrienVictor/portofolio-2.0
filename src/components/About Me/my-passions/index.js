@@ -40,7 +40,7 @@ function MyPassions() {
       className="passions___Container"
       data-sal="slide-left"
       data-sal-delay="300"
-      data-sal-easing="ease-in"
+      data-sal-easing="ease-out"
     >
       <h2 style={{ textAlign: 'center' }}>
         {data.contentfulSectionEntry.subtitle2}
