@@ -38,7 +38,7 @@ function MyPassions() {
   return (
     <div
       className="passions___Container"
-      data-sal="slide-up"
+      data-sal="slide-down"
       data-sal-delay="300"
       data-sal-easing="ease-out"
     >
